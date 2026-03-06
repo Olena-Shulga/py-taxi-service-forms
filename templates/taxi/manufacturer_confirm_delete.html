@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-  <h1>Delete Car</h1>
+  <h1>Delete Manufacturer</h1>
 
   <p>
     Are you sure you want to delete the manufacturer
@@ -10,5 +10,5 @@
     {% csrf_token %}
     <input type="submit" value="Yes, delete" class="btn btn-danger">
   </form>
-  <a href="{% url 'taxi:manufacturer-list' %}"><button class="btn btn-primary">Cancel</button></a>
+  <a href="javascript:history.back()" class="btn btn-primary">Cancel</a>
 {% endblock %}
